@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My web site</title>
+    <meta charset="utf-8" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+
+    <!-- Bootstrap core CSS     -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Animation library for notifications   -->
+    <link href="assets/css/animate.min.css" rel="stylesheet"/>
+    <script src="Chart.min.js"></script>
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+    <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+         <div class="sidebar-wrapper">
+           <div class="logo">
+               <h2>Menu</h2>
+           </div>
+
+           <ul class="nav">
+               <li class="active">
+                   <a href="template.html">
+                       <i class="pe-7s-graph"></i>
+                       <p>Acceuil</p>
+                   </a>
+               </li>
+
+               <li class="active">
+                 <a href="formulaire.html">
+                   <i class="pe-7s-user"></i>
+                   <p>Personnel</p>
+                 </a>
+
+               </li>
+               
+               <li class="active">
+                 <a href="template_1.html" >
+                   <i class="pe-7s-timer"></i>
+                   <p>Evaluation</p>
+                 </a>
+
+               </li>
+
+           </ul>
+     </div>
+    </div>
+
+   <!-- ********************************************************************************************************** -->
+   <!-- menu superieur -->
+    <div class="main-panel">
+      <nav class="navbar navbar-default navbar-fixed">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Personnel</a>
+          </div>
+
+          <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                   <a href="">
+                       Account
+                    </a>
+                </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </nav>
+
+      <!-- ****************************************************************************************************** -->
+      <!-- le centre -->
+      <div class="content">
+        <div class="container-fluid">
+          <form action="s1" method="post">
+
+            <!-- <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="idpersonnel" class="col-form-label">ID Personnel</label>
+                <input type="text" class="form-control" id="idpersonnel" name="idpersonnel">
+              </div>
+            </div> -->
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="nom" class="col-form-label">nom</label>
+                <input type="text" class="form-control" id="nom" name="nom">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="prenom" class="col-form-label">prenom</label>
+                <input type="text" class="form-control" id="prenom" name="prenom">
+              </div>
+
+            </div>
+            <!-- ****************************************************************************************** -->
+
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="date_naissance" class="col-form-label">date de naissance</label>
+                <input type="date" class="form-control" id="date_naissance" name="date_naissance">
+              </div>
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="sexe" class="col-form-label">sexe</label>
+                <select id="sexe" name="sexe">
+                  <option value="homme">homme</option>
+                  <option value="femme">femme</option>
+                </select>
+              </div>
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="type" class="col-form-label">type</label>
+                <select id="type" name="type">
+                  <option value="CDD">CDD</option>
+                  <option value="CDI">CDI</option>
+                  <option value="stagiaire">stagiaire</option>
+                </select>
+              </div>
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="date_embauche" class="col-form-label">date d'embauche</label>
+                <input type="date" class="form-control" id="date_embauche" name="date_embauche">
+              </div>
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="service" class="col-form-label">Service</label>
+                <select id="service" name="service">
+                  <option value="direction">direction</option>
+                  <option value="maintenance">maintenance</option>
+                  <option value="commercial">commercial</option>
+                  <option value="productivite">productivité</option>
+                </select>
+              </div>
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="echelon" class="col-form-label">echelon</label>
+                <input type="number" class="form-control" id="echelon" name="echelon">
+              </div>
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="salaire" class="col-form-label">salaire</label>
+                <input type="number" class="form-control" id="salaire" name="salaire">
+              </div>
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="grade" class="col-form-label">grade</label>
+                <input type="text" class="form-control" id="grade" name="grade">
+              </div>
+            </div>
+
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="statut" class="col-form-label">statut</label>
+                <select id="statut" name="statut">
+                  <option value="employe">employé</option>
+                  <option value="ouvrier">ouvrier</option>
+                  <option value="directeur">directeur</option>
+                  <option value="chef_service">chef de service</option>
+                </select>
+              </div>
+
+              <div class="form-group col-lg-4">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="cadre"> cadre
+      </label>
+    </div>
+  </div>
+
+  <div class="form-group col-lg-4">
+  <div class="form-check">
+  <label class="form-check-label">
+  <input class="form-check-input" type="checkbox" name="formation"> formation
+  </label>
+  </div>
+  </div>
+
+            </div>
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="lieu_residence" class="col-form-label">lieu de résidence</label>
+                <input type="text" class="form-control" id="lieu_residence" name="lieu_residence">
+              </div>
+            </div>
+
+            <!-- ****************************************************************************************** -->
+
+
+
+
+            <!-- ****************************************************************************************** -->
+            <div class="row">
+              <div class="form-group col-lg-4">
+                <label for="duree_contrat" class="col-form-label">durée de contrat</label>
+                <input type="number" class="form-control" id="duree_contrat" name="duree_contrat">
+              </div>
+            </div>
+
+            <!-- ****************************************************************************************** -->
+
+
+
+
+<!-- ************************************************************************************************************* -->
+
+
+
+
+
+
+  <br><button type="submit" class="btn btn-primary">Valider</button>
+</form>
+
+
+        </div>
+
+      </div>
+
+      <!-- ****************************************************************************************************** -->
+      <!-- le pied de la page -->
+      <footer class="footer">
+        <div class="container-fluid">
+          <nav class="pull-left">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+            </ul>
+
+          </nav>
+
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  </body>
+</html>
